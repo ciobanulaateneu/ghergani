@@ -1,0 +1,68 @@
+<div class="category-desc">
+    <h3>Booking Request</h3>
+    <p>Please fill out the corresponding fields to make a booking</p>
+</div>
+<br />
+<form id="AVP" method="post" action="https://www.secure-hotel-booking.com/New-Montana/JBUF/search?hotelId=22210"
+    class="visform" target="_blank">
+    <input type="hidden" id="language" name="language" value="en" />
+    <input type="hidden" id="AVP_arrivalDate" name="arrivalDate" value="" />
+    <input type="hidden" id="AVP_nights" name="nights" value="" />
+    <input type="hidden" id="_ga" name="_ga" value="" />
+    <input type="hidden" id="guestCountSelector" name="guestCountSelector" value="ReadOnly" />
+    <input type="hidden" id="crossSell" name="crossSell" value="false" />
+    <fieldset>
+        <table>
+            <tr>
+                <td colspan="2">
+                    <p> Arrival date <select id="AVP_list_days" onchange="updateDDay();"></select> <select
+                            id="AVP_list_months" onchange="setDays();"></select>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <p>
+                            Departure date <select id="AVP_list_ddays"></select> <select id="AVP_list_dmonths"
+                            onchange="setDDays();"></select>
+                    </p>
+                </td>
+
+            </tr>
+            <tr>
+
+            </tr>
+            <tr>
+
+                <td colspan="2">
+                    
+                    <p>Adults <select id="selectedAdultCount" name="selectedAdultCount"></select> Children
+                        <select id="selectedChildCount" name="selectedChildCount"></select> Infants <select
+                            id="selectedInfantCount" name="selectedInfantCount"></select>
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+
+            </tr>
+            <tr>
+                <td align="center" class="visBtnCon">
+                    
+                    <a href="javascript:validate()"  />
+                    Book </td>
+                <td align="center"> <a href="https://www.secure-hotel-booking.com/modification/New-Montana/JBUF"
+                        target="_blank">Cancel</a> </td>
+            </tr>
+        </table>
+    </fieldset>
+</form>
+<script type="text/javascript">
+    var months = new Array( "January", "February", "March", "April", "May", "June", "July", "August", "September",
+        "October", "November", "December" );
+    var message = "Date out of schedule";
+</script>
+<script type="text/javascript" src="https://www.secure-hotel-booking.com/New-Montana/JBUF/scripts/base.js"></script>
